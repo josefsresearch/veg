@@ -1,0 +1,137 @@
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/edit_profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/default_picture" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/edit_profile_lacto_ovo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_profile_lacto_ovo" />
+
+                <RadioButton
+                    android:id="@+id/edit_profile_pescatarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_profile_pescatarian" />
+
+                <RadioButton
+                    android:id="@+id/edit_profile_vegetarian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/edit_profile_vegetarian" />
+
+                <RadioButton
+                    android:id="@+id/edit_profile_vegan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_profile_vegan" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/edit_profile_special_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/edit_profile_special_ingredients"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ListView
+            android:id="@+id/edit_profile_special_ingredients_list"
+            android:layout_width="match_parent"
+            android:layout_height="152dp" >
+
+        </ListView>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/edit_profile_can_eat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:src="@drawable/success_small" />
+
+                <RadioButton
+                    android:id="@+id/edit_profile_cant_eat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="30dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:src="@drawable/fail_small" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/edit_profile_add_ingredient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/edit_profile_add_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/confirm" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/edit_profile_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:src="@drawable/save" />
+
+    </LinearLayout>
